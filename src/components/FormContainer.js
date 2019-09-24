@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {getPrimeNumbers} from '../actions/form';
+import {getPrimeNumbers} from '../actions/primeNumbersList';
 import Form from './Form';
+import ResultContainer from "./ResultContainer";
+
 
 class FormContainer extends Component {
     state = {
@@ -25,11 +27,10 @@ class FormContainer extends Component {
     };
 
     render() {
-        return (<Form
-            onSubmit={this.onSubmit}
-            onChange={this.onChange}
-            values={this.state}
-        />)
+        return (<div>
+            <Form onSubmit={this.onSubmit} onChange={this.onChange} values={this.state}/>
+            <ResultContainer/>
+        </div>)
     }
 }
 
