@@ -14,8 +14,6 @@ export function getPrimeNumbers(number) {
         request(`http://localhost:5000/${number}`)
             .then(res => {
                 dispatch(setPrimeNumbers(res.body))
-                console.log(number)
-                console.log(res.body)
             })
             .catch(console.error)
 
