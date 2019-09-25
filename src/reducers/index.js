@@ -1,6 +1,11 @@
-import { combineReducers } from "redux";
-import primeNumbersList from './primeNumbersList'
+import { FETCH_PRIME_NUMBERS } from '../actions/primeNumbersList';
 
-export default combineReducers({
-    primeNumbersList
-})
+const reducer = (state = [], action = {}) => {
+    switch (action.type) {
+        case FETCH_PRIME_NUMBERS:
+            return action.payload
+        default:
+            return state
+    }
+}
+export default reducer
