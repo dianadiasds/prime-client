@@ -6,7 +6,7 @@
 The project was developed using React.
 
 ### Project CI/CD 
-This project is integrated with TravisCI, Codecod and Heroku. Every push to `master` branch triggers the TravisCI. 
+This project is integrated with TravisCI and Heroku. Every push to `master` branch triggers the TravisCI. 
 Afterwars TravisCI will triger a new deployment in Heroku.
 
 This project is currently deployed and available with the latest master version in: [prime-client](https://prime-client.herokuapp.com)
@@ -16,7 +16,7 @@ This project is integrated with TravisCI. This tool provides a badge for the bui
     
 ### Frameworks and libraries used
 
-- Redux: managent state of aplication
+- Redux: management state of aplication
 - Superagent: client REST 
 
 ### How to start this project locally
