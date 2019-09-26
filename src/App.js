@@ -1,16 +1,17 @@
-import React from 'react';
 import FormContainer from "./components/FormContainer";
+import React from "react";
 
 
 function App() {
+
   return (
-    <div>
+    <main>
       <FormContainer/>
-    </div>
+    </main>
   );
+
 }
 
 export default App;
-
 
 
